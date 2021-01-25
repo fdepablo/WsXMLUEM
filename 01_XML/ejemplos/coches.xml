@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marca>
+    <compania>Land Rover</compania>
+    <pais>Reino Unido</pais>
+    <direccion>Calle la plata 34</direccion>
+    <modelos>
+        <modelo id="01">
+            <nombre_modelo>Range Rover</nombre_modelo>
+            <codigo_modelo>001</codigo_modelo>
+            <tipo_motor>diesel</tipo_motor>
+        </modelo>
+        <modelo id="02">
+            <nombre_modelo>Range Rover Sport</nombre_modelo>
+            <codigo_modelo>002</codigo_modelo>
+            <tipo_motor>gasolina</tipo_motor>
+        </modelo>        
+    </modelos>
+    <codigo_html_Land_Rover>
+    <![CDATA[
+        <!-- comentarios html-->
+        <html>
+            <head>
+                <title>Land Rover</title>
+            </head>
+            <body>
+                <h1>Land Rover</h1>
+                <h3>Información grupo Land Rover</h3>
+            </body>
+        </html>
+    ]]>
+    </codigo_html_Land_Rover>
+</marca>

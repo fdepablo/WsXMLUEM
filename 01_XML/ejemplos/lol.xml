@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LCK>
+  <titulo>Equipos en la LCK</titulo>
+  <premio>10000 euros</premio>
+  <equipos>
+      <equipo id="1">
+        <nombre>SKT T1</nombre>
+        <jugadores>
+            <jugador>
+                <nombre>Canna</nombre> 
+                <rol>TOP</rol>
+            </jugador>
+            <jugador>
+                <nombre>Ellin</nombre>
+                <rol>JUNGLE</rol>
+            </jugador>
+        </jugadores>
+        <creacion>2018-05-03</creacion>
+      </equipo>
+  </equipos>
+  <!-- Cuando ponenemos un nodo con CDATA lo que estamos diciendo es que no procese el texto que hay
+dentro y lo escriba en bruto, si no pusieramos CDATA, los programas interpretarían ese codigo como
+si fuera un xml-->
+  <codigo_html_LCK>
+
+    <![CDATA[ 
+
+    <html>
+
+      <head>
+
+        <title>LCK</title>
+
+      </head>
+
+    </html>
+
+    ]]>
+
+  </codigo_html_LCK>
+
+</LCK>
