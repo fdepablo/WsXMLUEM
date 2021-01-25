@@ -6,7 +6,7 @@
 
     <!ELEMENT titulo (#PCDATA)>
     <!ELEMENT fecha (#PCDATA)>
-    <!ELEMENT actores (actor)>
+    <!ELEMENT actores (actor+)>
 
     <!ELEMENT actor (nombre,edad)>
     <!ELEMENT nombre (#PCDATA)>
