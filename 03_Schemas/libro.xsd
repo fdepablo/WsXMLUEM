@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"> 
+ <element name="Libro">  
+  <complexType>
+   <sequence>
+    <element name="Titulo" type="string" />
+    <element name="Autor" type="string"/>
+    <element name="Editorial" type="string" default="Espasa"/>
+    <element name="fecha_edicion" type="date"></element>
+   </sequence>
+   <attribute name="precio" type="double"></attribute>
+  </complexType>
+ </element>
+</schema>
