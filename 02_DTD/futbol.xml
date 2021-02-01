@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE equipos [
+    <!ELEMENT equipos (equipoDeFutbol+)>
+    <!ELEMENT equipoDeFutbol (nombre,edad,entrenador,jugadores)>
+    <!ATTLIST equipoDeFutbol id CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT entrenador (#PCDATA)>
+    <!ELEMENT jugadores (delantero, centroCampo, defensa)>
+    <!ELEMENT delantero (nombre_delantero+)>
+    <!ELEMENT nombre_delantero (#PCDATA)>
+    <!ELEMENT centroCampo (nombre_centro+)>
+    <!ELEMENT nombre_centro (#PCDATA)>
+    <!ELEMENT defensa (nombre_defensa+)>
+    <!ELEMENT nombre_defensa (#PCDATA)>
+]>
+<equipos>
+    <equipoDeFutbol id="1">
+
+        <nombre>Real Madrid</nombre>
+
+        <edad>118</edad>
+
+        <entrenador>Zinedine Zidane</entrenador>
+
+
+        <jugadores>
+
+            <delantero>
+
+                <nombre_delantero>Sergio Ramos</nombre_delantero>
+
+                <nombre_delantero>Eden Hazard</nombre_delantero>
+
+                <nombre_delantero>Karim benzema</nombre_delantero>
+
+                <nombre_delantero>Vinicius jr</nombre_delantero>
+
+            </delantero>
+
+
+            <centroCampo>
+
+                <nombre_centro>Martin Degaard</nombre_centro>
+
+                <nombre_centro>Marvin Park</nombre_centro>
+
+            </centroCampo>
+
+
+            <defensa>
+
+                <nombre_defensa>Raphael varane</nombre_defensa>
+
+                <nombre_defensa>Ferland Mendy</nombre_defensa>
+
+            </defensa>
+
+        </jugadores>
+
+    </equipoDeFutbol>
+</equipos>
