@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "personas.xsd">
+    <persona>
+        <nombre>Homer</nombre>
+        <apellidos>Simpson</apellidos>
+        <apellidos>J</apellidos>
+        <edad>40</edad>
+    </persona>
+    <persona>
+        <nombre>Marge</nombre>
+        <apellidos>Simpson</apellidos>
+        <apellidos>R</apellidos>
+        <edad>34</edad>
+    </persona>
+</personas>

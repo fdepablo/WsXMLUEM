@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="pelicula">
+        <complexType>
+            <sequence>
+                <element name="titulo" type="string" />
+                <element name="minutos" type="integer" />
+                <element name="fecha_estreno" type="date" />
+            </sequence>
+        </complexType>
+    </element>
+</schema>

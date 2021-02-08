@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "pelicula.xsd">
+    <titulo>Las Marias</titulo>
+    <minutos>130</minutos>
+    <fecha_estreno>2021-01-02</fecha_estreno>
+</pelicula>

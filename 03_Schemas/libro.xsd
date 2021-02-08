@@ -1,14 +1,32 @@
 <?xml version="1.0"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema"> 
- <element name="Libro">  
-  <complexType>
-   <sequence>
-    <element name="Titulo" type="string" />
-    <element name="Autor" type="string"/>
-    <element name="Editorial" type="string" default="Espasa"/>
-    <element name="fecha_edicion" type="date"></element>
-   </sequence>
-   <attribute name="precio" type="double"></attribute>
-  </complexType>
- </element>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <annotation>
+        <documentation>
+            Schema que marca la estructura de un libro
+         </documentation>
+    </annotation>
+    <element name="Libro">
+        <complexType>
+            <sequence>
+                <element name="Titulo" type="string" />
+                <element name="Autor" type="string" minOccurs="1" maxOccurs="unbounded" />
+                <element name="Editorial" type="string" default="Espasa" />
+                <element name="fecha_edicion" type="date" minOccurs="0" maxOccurs="1"></element>
+                <!--Elemento vacio simple, estos elementos deberian de ser autoexplicativos y que el tener
+    la etiqueta o no tenerla ya aportaria informacion -->
+                <element name="bestseller" minOccurs="0">
+                    <complexType />
+                </element>
+                <!-- Elemento vacio con un atributo-->
+                <element name="paginas">
+                    <complexType>
+                        <attribute name="valor" use="required"></attribute>
+                    </complexType>
+                </element>
+            </sequence>
+            <!-- Los atributos son optativos por defecto -->
+            <attribute name="precio" type="double"></attribute>
+            <attribute name="id" type="integer" use="required"></attribute>
+        </complexType>
+    </element>
 </schema>

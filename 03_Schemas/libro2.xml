@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Libro precio="30.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "libro.xsd">
+<Libro id="2" precio="30.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "libro.xsd">
     <Titulo>Fray Perico y su borrico</Titulo>
     <Autor>Yo no</Autor>
     <Editorial>Espasa</Editorial>
     <fecha_edicion>2011-11-04</fecha_edicion>
+    <paginas valor="154" />
 </Libro>

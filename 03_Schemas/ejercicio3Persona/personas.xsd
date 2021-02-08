@@ -1,0 +1,17 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="personas">
+        <complexType>
+            <sequence>
+                <element name="persona" minOccurs="1" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="nombre" type="string"/>
+                            <element name="apellidos" type="string" minOccurs="1" maxOccurs="unbounded"/>
+                            <element name="edad" type="integer"></element>
+                        </sequence>                        
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

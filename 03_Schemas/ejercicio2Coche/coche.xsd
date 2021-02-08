@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="coche">
+        <complexType>
+            <sequence>
+                <element name="marca" type="string" />
+                <element name="modelo" type="string" />
+                <element name="color" type="string" />
+                <element name="matricula" type="integer" />
+                <!-- La matricula de normal no puede ser integer porque si no no acepta letras
+                lo pongo integer porque lo pide el ejercico pero estaria mal-->
+                <element name="año" type="date" />
+                <element name="kms" type="double" />
+            </sequence>
+        </complexType>
+    </element>
+</schema>

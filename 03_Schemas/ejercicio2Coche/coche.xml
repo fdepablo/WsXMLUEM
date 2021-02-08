@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coche xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "coche.xsd">
+    <marca>Ferrari</marca>
+    <modelo>Testarrosa</modelo>
+    <color>Rojo</color>
+    <matricula>1234</matricula>
+    <año>1982-03-01</año>
+    <kms>50000</kms>
+</coche>
