@@ -23,6 +23,16 @@
                         <attribute name="valor" use="required"></attribute>
                     </complexType>
                 </element>
+                <!-- Ejemplo de nodo simple("String") pero con atributos -->
+                <element name="prologo">
+                    <complexType>
+                        <simpleContent>
+                            <extension base="string">
+                                <attribute name="pagina"></attribute>
+                            </extension>
+                        </simpleContent>
+                    </complexType>
+                </element>
             </sequence>
             <!-- Los atributos son optativos por defecto -->
             <attribute name="precio" type="double"></attribute>
