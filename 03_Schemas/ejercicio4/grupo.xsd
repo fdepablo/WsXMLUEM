@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+ <element name="grupo">
+    <complexType>
+         <sequence>
+             <!-- 10. Longitud maxima-->
+             <element name="nombre_grupo">
+                 <simpleType>
+                     <restriction base="string">
+                         <minLength value="1"/>
+                         <maxLength value="25"/>
+                     </restriction>
+                 </simpleType>
+             </element>
+             <element name="integrantes">
+                 <complexType>
+                     <sequence>
+                         <element name="nombre" type="string" minOccurs="1" maxOccurs="unbounded"/>
+                     </sequence>
+                 </complexType>
+             </element>
+             <element name="album" minOccurs="1" maxOccurs="unbounded">
+                 <complexType>
+                     <sequence>
+                         <element name="nombre" type="string"/>
+                         <element name="discografica" type="string"/>
+                         <element name="canciones">
+                             <complexType>
+                                 <sequence>
+                                     <!-- 5. Elemento que se puede repetir de 1 a 5 veces-->                                     
+                                    <element name="cancion" type="string" minOccurs="1" maxOccurs="5"/>                                    
+                                 </sequence>
+                             </complexType>
+                         </element>
+                         <!-- 7. Tiene que estar en un rango de numeros-->
+                         <element name="anio">
+                             <simpleType>
+                                 <restriction base="integer">
+                                     <minInclusive value="1910"/>
+                                     <maxInclusive value="2021"/>
+                                 </restriction>
+                             </simpleType>
+                         </element>
+                         <element name="dedicatoria" minOccurs="0" maxOccurs="unbounded">
+                             <complexType>
+                                 <simpleContent>
+                                     <extension base="string">
+                                         <attribute name="a_quien"></attribute>
+                                     </extension>
+                                 </simpleContent>
+                             </complexType>
+                         </element>
+                     </sequence>
+                     <attribute name="id" type="integer" use="optional"></attribute>
+                 </complexType>
+             </element>
+             <element name="pais" type="string"/>
+             <!--2. Elemento con un atributo-->
+             <element name="anio_formacion">
+                 <complexType>
+                     <attribute name="año" use="required"></attribute>
+                 </complexType>
+             </element>
+             <element name="discos_vendidos" type="string"/>
+             <!-- 8. Elemento con valor preestablecido-->
+             <element name="genero">
+                 <simpleType>
+                     <restriction base="string">
+                         <enumeration value="Rock"/>
+                         <enumeration value="Blues"/>
+                         <enumeration value="Jazz"/>
+                         <enumeration value="Gospel"/>
+                         <enumeration value="Soul"/>
+                         <enumeration value="Rhythm and Blues"/>
+                         <enumeration value="House"/>
+                         <enumeration value="Disco"/>  
+                         <enumeration value="Salsa"/>                   
+                     </restriction>
+                 </simpleType>
+             </element>
+             <!-- 9. Tipo simple, coma flotante-->
+             <element name="concierto_mas_costoso">
+                 <complexType>
+                     <attribute name="precio" use="required" type="float"></attribute>
+                 </complexType>
+             </element>
+             <!--Elemento simple vacío opcional-->
+             <element name="estado_activo" minOccurs="0">
+                 <complexType/>
+             </element>
+         </sequence>
+         <attribute name="id" type="integer" use="required"></attribute>
+     </complexType>
+ </element>
+</schema>

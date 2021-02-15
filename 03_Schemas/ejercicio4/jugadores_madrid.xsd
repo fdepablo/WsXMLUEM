@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="jugadores_madrid">
+        <complexType>
+            <sequence>
+                <element name="jugador" minOccurs="1" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="nombre">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <maxLength value="50"></maxLength>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="dorsal">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <pattern value="[0-9]{1,2}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="posicion" minOccurs="1" maxOccurs="4">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <enumeration value="portero"></enumeration>
+                                        <enumeration value="defensa"></enumeration>
+                                        <enumeration value="mediocentro"></enumeration>
+                                        <enumeration value="delantero"></enumeration>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="estadisticas">
+                                <complexType>
+                                    <sequence>
+                                        <element name="partidos" type="integer" />
+                                        <element name="goles" type="integer" />
+                                        <element name="goles_por_partido">
+                                            <simpleType>
+                                                <restriction base="double">
+                                                    <maxInclusive value="3"></maxInclusive>
+                                                    <minInclusive value="0.01"></minInclusive>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="tarjetas_amarillas_por_partido">
+                                            <simpleType>
+                                                <restriction base="double">
+                                                    <maxInclusive value="2"></maxInclusive>
+                                                    <minInclusive value="0.01"></minInclusive>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="nacionalidad">
+                                            <simpleType>
+                                                <restriction base="string">
+                                                    <enumeration value="ES"></enumeration>
+                                                    <enumeration value="PT"></enumeration>
+                                                    <enumeration value="BR"></enumeration>
+                                                    <enumeration value="HR"></enumeration>
+                                                    <enumeration value="DE"></enumeration>
+                                                    <enumeration value="FR"></enumeration>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                    </sequence>
+                                    <attribute name="bota_de_oro" type="boolean" use="optional" />
+                                </complexType>
+                            </element>
+                            <element name="capitan">
+                                <complexType />
+                            </element>
+                        </sequence>
+                        <attribute name="id" type="integer"></attribute>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="consola">
+        <complexType>
+            <sequence>
+                <!-- Elementos complejos con atributos--> 
+                <element name="color" type="string" />
+                <element name="tamaño" type="string" />
+                <element name="precio" type="integer"/>   
+                <!-- Elemento vacio simple optativo -->
+                <element name="EdicionDigital" minOccurs="0">
+                    <complexType />
+                </element><!-- Elemento vacio con un atributo-->
+                <element name="Videojuegos">
+                    <complexType>
+                        <attribute name="incluido" use="required"></attribute>
+                    </complexType>
+                </element>
+                <!-- Elemento simple con 2 digitos -->
+                <element name="DiscoDuro">
+                    <simpleType>
+                        <restriction base="string">
+                            <length value="2"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                 <!-- Elemento simple con rango de numeros -->
+                <element name ="MesCompra">
+                    <simpleType>
+                        <restriction base="integer">
+                            <minInclusive value="1"/>
+                            <maxInclusive value="12"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+
+                <!-- Elemento que se repite de 1 a 5 veces -->
+                <element name="Mandos">
+                    <complexType>
+                        <sequence>
+                            <element name="Mando" minOccurs="1" maxOccurs="5" />
+                        </sequence>
+                    </complexType>
+                </element>
+                <!-- Texto simple con longitud maxima -->
+                <element name="usuario">
+                    <simpleType>
+                        <restriction base="string">
+                            <length value="8"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <!-- elemento con valores preestablecidos -->
+                <element name="idioma">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="EN"/>
+                            <enumeration value="ES"/>
+                            <enumeration value="PT"/>
+                            <enumeration value="IT"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<consola xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "videoconsola.xsd">
+    <color>negra</color>
+    <tamaño>mediana</tamaño>
+    <precio>300</precio>
+    <EdicionDigital />
+    <Videojuegos incluido="2" />
+    <DiscoDuro>02</DiscoDuro>
+    <MesCompra>3</MesCompra>
+    <Mandos>
+        <Mando>1</Mando>
+        <Mando>2</Mando>
+    </Mandos>
+    <usuario>Vegeta77</usuario>
+    <idioma>IT</idioma>
+</consola>

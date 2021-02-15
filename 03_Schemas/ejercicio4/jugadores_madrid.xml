@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jugadores_madrid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jugadores_madrid.xsd">
+    <jugador id="1">
+        <nombre>Marcelo</nombre>
+        <dorsal>25</dorsal>
+        <posicion>defensa</posicion>
+        <estadisticas>
+            <partidos>150</partidos>
+            <goles>50</goles>
+            <goles_por_partido>0.19</goles_por_partido>
+            <tarjetas_amarillas_por_partido>1</tarjetas_amarillas_por_partido>
+            <nacionalidad>ES</nacionalidad>
+        </estadisticas>
+        <capitan/>
+    </jugador>
+</jugadores_madrid>
