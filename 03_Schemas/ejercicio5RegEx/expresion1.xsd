@@ -1,0 +1,49 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="personas">
+        <complexType>
+            <sequence>
+                <element name="nombre_apellidos">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="([A-Z]([a-z])+(\s) {0,1})+"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="matricula_coche">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="[0-9]{4}-[BCDFGHJKMNLPQRSTVWXYZ]{3}"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="numero_seguridad_social">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="[A-Z]{2}([0-9]{8})+"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="telefono_internacional">
+                    <simpleType>
+                        <restriction base="string">
+                            <!-- Si queremos poner como patron un caracter especial, como por
+                            ejemplo un "+" o un "(" debemos de ponerlo entre "[]" o debemos
+                            de precederlo por "\", ej: "\+" -->
+                            <pattern value="\+\([0-9]{2}\)\s[0-9]{9}"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="direccion_ip">
+                    <simpleType>
+                        <restriction base="string">
+                            <!-- Si queremos poner como patron un caracter especial, como por
+                            ejemplo un "+" o un "(" debemos de ponerlo entre "[]" o debemos
+                            de precederlo por "\", ej: "\+" -->
+                            <pattern value="([0-9]{3}.){3}[0-9]{3}"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "expresion1.xsd">
+    <nombre_apellidos>Felix Sanchez </nombre_apellidos>
+    <matricula_coche>5678-CWP</matricula_coche>
+    <numero_seguridad_social>TY12345679</numero_seguridad_social>
+    <telefono_internacional>+(34) 638908765</telefono_internacional>
+    <direccion_ip>255.168.122.251</direccion_ip>
+</personas>
