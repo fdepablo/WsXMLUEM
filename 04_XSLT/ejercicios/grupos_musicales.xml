@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="grupos_musicales.xsl"?>
+<grupos_musicales>
+    <titulo>Grupos Musicales</titulo>
+    <grupo id="1">
+        <nombre_grupo>Aerosmith</nombre_grupo>
+        <genero>Rock</genero>
+        <pais>EEUU</pais>
+        <anio_formacion>1970</anio_formacion>
+        <estado_activo>1</estado_activo>
+        <discos_vendidos>200 millones</discos_vendidos>
+        <concierto_mas_costoso precio="12.32" />
+        <integrantes>
+            <nombre>Joe Perry</nombre>
+            <nombre>Steven Tyles</nombre>
+            <nombre>Tom Hamilton</nombre>
+            <nombre>Joey Kramer</nombre>
+            <nombre>Ray Tabano</nombre>
+        </integrantes>
+        <album id ="1">
+            <nombre>Aerosmith</nombre>
+            <discografica>Columbia Records</discografica>
+            <anio>1973</anio>
+            <dedicatoria a_quien="Todos">
+                Se agradece a todos!!!                
+            </dedicatoria>
+            <canciones>
+                <cancion>Make it</cancion>
+                <cancion>Dream on</cancion>
+            </canciones>
+        </album>
+    </grupo>
+    <grupo id="2">
+        <nombre_grupo>R.E.M.</nombre_grupo>
+        <genero>Rock alternativo</genero>
+        <pais>EEUU</pais>
+        <anio_formacion>1980</anio_formacion>
+        <estado_activo>0</estado_activo>
+        <discos_vendidos>85 millones</discos_vendidos>
+        <concierto_mas_costoso precio="5.32" />
+        <integrantes>
+            <nombre>Michael Stipe</nombre>
+            <nombre>Bill Berry</nombre>
+            <nombre>Peter Buck</nombre>
+            <nombre>Mike Mills</nombre>
+        </integrantes>
+        <album id ="1">
+            <nombre>Out of Time</nombre>
+            <discografica>Warner Bros. Records</discografica>
+            <anio>1991</anio>
+            <dedicatoria a_quien="Todos">
+                Se agradece a todos!!!
+            </dedicatoria>
+            <canciones>
+                <cancion>Losing my religion</cancion>
+                <cancion>Shiny Happy People</cancion>
+                <cancion>Near Wild Heaven</cancion>
+                <cancion>Radio Songe</cancion>
+            </canciones>
+        </album>
+    </grupo>
+</grupos_musicales>

@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+p {
+	background-color: black;
+	color: red;
+	font-family: "Comic sans ms";
+	font-size: 75;
+	display: block;
+}
+
+h1 {
+	background-color: cyan;
+	font-family: "Verdana";
+	font-size: 20;	
+	display: block;
+}
+
+salario {
+	color: seagreen;
+	font-family: "Verdana";
+	font-size: 15;
+	display: block;	
+}

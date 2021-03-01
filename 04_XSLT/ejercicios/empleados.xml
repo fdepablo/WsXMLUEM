@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="empleados.xsl"?>
+ <!-- 
+      <?xml-stylesheet type="text/css" href="listaempleados.css"?>
+-->
+<empresa>    
+    <nombre>ARABA CONSULTORIA S.L.</nombre>
+    <fecha_constitucion> 27/01/2000</fecha_constitucion>
+    <ceo_director>Isabel de Castilla</ceo_director>
+
+    <empleados>
+        <empleado id="1" numero_empleado="ab120">
+            <nombre>Carlos</nombre>
+            <apellidos>Martin</apellidos>
+            <puesto categoria="senior">analista</puesto>
+            <permanencia tiempo="10" />
+            <proyectos>               
+                <proyecto>
+                    <nombre>Curso XML</nombre>
+                </proyecto>
+                <proyecto>
+                    <nombre>GPM</nombre>
+                </proyecto>
+            </proyectos>
+            <salario>2800,35</salario>
+            <hora_extra>5</hora_extra>
+        </empleado>
+        <empleado id="2" numero_empleado="ab121">
+            <nombre>Manuel</nombre>
+            <apellidos>Perez Avila</apellidos>
+            <puesto categoria="junior">programador</puesto>
+            <permanencia tiempo="2" />
+            <proyectos>
+                <proyecto><nombre>Android </nombre></proyecto>
+                <proyecto><nombre>GPM </nombre></proyecto>
+            </proyectos>
+            <salario>3200,21</salario>
+        </empleado>
+    </empleados>
+</empresa>
