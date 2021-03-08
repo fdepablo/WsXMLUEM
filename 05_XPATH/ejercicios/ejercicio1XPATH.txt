@@ -1,0 +1,10 @@
+
+Realizar las siguientes consultas XPATH sobre el fichero cruceros.xml
+
+1) Todas las compañias
+2) Todas las salidas de las escalas
+3) La fecha de salida del crucero con el codigo "CRUMED21"
+4) Los días del crucero cuya compañia sea "Costa cruceros"
+5) Las ultimas 3 escalas de cada crucero
+6) La ultima llegada de cada crucero
+7) El destino del crucero cuya fecha de salida sea "2018-12-26"

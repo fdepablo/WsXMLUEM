@@ -18,7 +18,7 @@
 		<escalas>
 			<escala dia="1">
 				<parada>Venecia</parada>
-				<llegada></llegada>
+				<llegada>5:00</llegada>
 				<salida>18:00</salida>
 			</escala>
 			<escala dia="2">
@@ -44,7 +44,7 @@
 			<escala dia="6">
 				<parada>Venecia</parada>
 				<llegada>8:30</llegada>
-				<salida></salida>
+				<salida>5:45</salida>
 			</escala>			
 		</escalas>
 	</crucero>
@@ -58,7 +58,7 @@
 		<escalas>
 			<escala dia="1">
 				<parada>Barcelona</parada>
-				<llegada>0:00</llegada>
+				<llegada>10:00</llegada>
 				<salida>18:00</salida>
 			</escala>
 			<escala dia="2">

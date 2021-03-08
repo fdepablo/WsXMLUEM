@@ -71,7 +71,7 @@ Los predicados '[]' son condiciones que le ponemos a las expresiones XPATH para 
 	'/elemento2[elemento3>35.00]' aquellos 'elemento2' que contienen un 'elemento3' de valor superior a 35
 	'/elemento2[elemento3>35.00]/elemento4' aquellos elemento4 que esten en /elemento2/elemento3 y cuyo valor del elemento 3 sea mayor que 35. 
 	
-**Nota** siempre se devuelve el ultimo elemento de la expresion XPATH
+**Nota** siempre se devuelve los ultimos elementos de la expresion XPATH
 
 ## Seleccionando nodos desconocidos
 
