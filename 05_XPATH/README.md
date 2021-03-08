@@ -47,6 +47,16 @@ Se utiliza '@' para acceder a los atributos de un nodo
 	'//@id' 
 	devuelve los atributos 'id' de cualquier elemento
 
+### Seleccionando el propio nodo:
+Cuando estamos trabajando con rutas relativas, muchas veces queremos acceder al propio nodo, esto lo hacemos con "." (punto). Sería como el "this" de java. Por ejemplo, si queremos recorrer todas las canciones en un "for-each" y dentro del nodo canción hay un texto con el todo de la canción.
+
+	<xsl:for-each select="canciones/cancion">
+        <tr>
+            <td><h4>Canciones</h4></td> 
+            <td><xsl:value-of select="."/></td>
+        </tr>
+    </xsl:for-each>  
+ 
 ## Predicados
 
 Los predicados '[]' son condiciones que le ponemos a las expresiones XPATH para que filtre la busqueda. Algunos ejemplos:
@@ -56,11 +66,12 @@ Los predicados '[]' son condiciones que le ponemos a las expresiones XPATH para 
 	'/elemento1/elemento2[last()]' el ultimo
 	'/elemento1/elemento2[last()-1]' el pen�ultimo
 	'/elemento1/elemento2[position()<3]' los dos primeros (el primero es el 1)
-	'//elemento1[@atributo]' aquellos 'elemento1' que tienen el atributo indicado
-	'//elemento1[@atributo='XXX']' aquellos 'elemento1' que tienen el atributo indicado con valor XXX
-	'/elemento1/elemento2[elemento3>35.00]' aquellos 'elemento2' que contienen un 'elemento3' de valor superior a 35
-	'/elemento1/elemento2[elemento3>35.00]/elemento4' auqellos elemento4 que esten en elemento1/elemento2/elemento3 y cuyo valor del elemento 3 sea mayor que 35
-	'/elemento1/elemento2[elemento3>35.00]'
+	'//elemento1[@id]' aquellos 'elemento1' (no importa donde estén) que tienen el atributo "id"
+	'//elemento1[@nombre='tony']' aquellos 'elemento1' (no importa donde esten) que tienen el atributo "nombre" cuyo valor sea "tony"
+	'/elemento2[elemento3>35.00]' aquellos 'elemento2' que contienen un 'elemento3' de valor superior a 35
+	'/elemento2[elemento3>35.00]/elemento4' aquellos elemento4 que esten en /elemento2/elemento3 y cuyo valor del elemento 3 sea mayor que 35. 
+	
+**Nota** siempre se devuelve el ultimo elemento de la expresion XPATH
 
 ## Seleccionando nodos desconocidos
 
@@ -111,5 +122,5 @@ Necesitamos algun plugin como puede ser:
 1. [https://developer.mozilla.org/es/docs/Web/XPath](https://developer.mozilla.org/es/docs/Web/XPath)
 2. [https://www.w3schools.com/xml/xpath_intro.asp](https://www.w3schools.com/xml/xpath_intro.asp)
 3. [https://www.mclibre.org/consultar/xml/lecciones/xml-xpath.html](https://www.mclibre.org/consultar/xml/lecciones/xml-xpath.html)
-4. [Tutorial de MarkDown](https://www.markdownguide.org/basic-syntax/) (En VSC se puede usar la extension Markdown Preview Enhanced para ver los ficheros MD)
+4. [Tutorial de MarkDown](https://www.markdownguide.org/basic-syntax/) (En VSC se puede usar la extension "Markdown Preview Enhanced" para ver los ficheros MD)
 
